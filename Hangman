@@ -2,10 +2,14 @@ import random
 
 def play_again():
     answer=input('Do you want to play again? Yes/No :- ').lower()
-    if answer== "y" or "yes":
+    if answer== "y":
         play_game()
-    elif answer=="n" or "no":
-        exit()
+    elif answer=="yes":
+        play_game()
+    elif answer=="n":
+        quit()
+    elif answer=="no": 
+        quit()
     else:
         pass
 
@@ -61,7 +65,7 @@ def play_game():
             print('The number of letters in the input and the word do not match! Read the hinted number of letters again!')
 
 
-        status=' '
+        status=''
         if guessed==False:
             for letter in word:
                 if letter in letters_guessed:
@@ -81,6 +85,8 @@ def play_game():
         elif tries==0:
             print('Uh-Oh..You just ran out of tries! Please try again. ')
             play_again()
+
+       
         
 play_game()
 
