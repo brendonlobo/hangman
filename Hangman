@@ -14,7 +14,7 @@ def play_again():
         pass
 
 def get_word():
-    words=['cat','dog','monkey','personality','ability','capability']
+      words=['ironman','captainamerica','thor','hulk','blackwidow','hawkeye','blackpanther','thanos','starlord','mantis','gamora','drax','rocketracoon','groot','warmachine','spiderman','doctorstrange','scarlettwitch','vision','captainmarvel','nickfury']
     return random.choice(words)
 
 def play_game():
